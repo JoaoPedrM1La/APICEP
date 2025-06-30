@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="principal">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoBGCfBTDL-sHFj2kWebAs9jB5qtQuGfYRQ&s" alt="Logo">
+    
+        <div class="form-group">
+            <label for="cep">CEP</label>
+            <input type="text" id="inputCEP" maxlength="8" onblur="pesquisacep(this.value);">
+        </div>
+
+        <div class="form-group">
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="inputLog">
+        </div>
+        <div class="form-group">
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="inputCom">
+        </div>
+        <div class="form-group">
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="inputBai">
+        </div>
+        <div class="form-group">
+            <label for="localidade">Cidade:</label>
+            <input type="text" id="inputCid">
+        </div>
+        <div class="form-group">
+            <label for="estado">Estado:</label>
+            <input type="text" id="inputEst">
+        </div>
+        <div class="form-group">
+            <label for="ddd">DDD:</label>
+            <input type="text" id="inputDDD">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
