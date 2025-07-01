@@ -9,9 +9,14 @@
 <body>
     <div id="principal">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoBGCfBTDL-sHFj2kWebAs9jB5qtQuGfYRQ&s" alt="Logo">
+
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="inputNome">
+        </div>
     
         <div class="form-group">
-            <label for="cep">CEP</label>
+            <label for="cep">CEP:</label>
             <input type="text" id="inputCEP" maxlength="8" onblur="pesquisacep(this.value);">
         </div>
 
@@ -38,6 +43,13 @@
         <div class="form-group">
             <label for="ddd">DDD:</label>
             <input type="text" id="inputDDD">
+        </div>
+        
+        <input type="submit" value="Enviar" onclick="salvarDados(inputNome, inputCEP)">
+        <input type="submit" value="Listar">
+
+        <div class="form-group">
+            <h2 id="output-value"></h2>
         </div>
     </div>
     <script src="script.js"></script>

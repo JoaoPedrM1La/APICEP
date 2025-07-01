@@ -1,3 +1,5 @@
+let dados = [];
+
 function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
     document.getElementById('inputLog').value=("");
@@ -66,5 +68,18 @@ function pesquisacep(valor) {
     else {
         //cep sem valor, limpa formulário.
         limpa_formulário_cep();
+    }
+};
+
+async function salvarDados(nome, cep) {
+    const objeto = await meu_callback(cep);
+
+    if(cep == 0) {
+        alert("CEP não encontrado")
+    } else if(nome == null) {
+        alert("Nome não encontrado")
+    } else {
+
+        dados.push(localStorage.setItem())
     }
 };
